@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import { Header } from './components/Header';
+import { First } from './components/landing/First';
+import { OutsideBurgerBar } from './components/landing/OutsideBurgerBar';
+import { FirstImagePart } from './components/landing/FirstImagePart';
+import { Second } from './components/landing/Second';
+import { OurServices } from './components/landing/OurServices';
+import { Third } from './components/landing/Third';
+import { Fourth } from './components/landing/Fourth';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export const App = () => {
+  const [burgerClicked, setBurgerClicked] = useState(false);
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='bg-[#f6f4de]'>
+        <Header setBurgerClicked={setBurgerClicked} />
+        <OutsideBurgerBar clicked={burgerClicked} />
+        <First />
+        <FirstImagePart />
+        <Second />
+        <OurServices />
+        <Third />
+        <Fourth />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
-}
-
-export default App
+  );
+};

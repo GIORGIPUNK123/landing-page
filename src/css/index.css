@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+  
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostThin"), url("../fonts/jost/Jost-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostThinItalic"), url("../fonts/jost/Jost-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostExtraLight"), url("../fonts/jost/Jost-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostExtraLightItalic"), url("../fonts/jost/Jost-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostLight"), url("../fonts/jost/Jost-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostLightItalic"), url("../fonts/jost/Jost-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostRegular"), url("../fonts/jost/Jost-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostItalic"), url("../fonts/jost/Jost-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostMedium"), url("../fonts/jost/Jost-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostMediumItalic"), url("../fonts/jost/Jost-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostSemiBold"), url("../fonts/jost/Jost-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostSemiBoldItalic"), url("../fonts/jost/Jost-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostBold"), url("../fonts/jost/Jost-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostBoldItalic"), url("../fonts/jost/Jost-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostExtraBold"), url("../fonts/jost/Jost-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostExtraBoldItalic"), url("../fonts/jost/Jost-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostBlack"), url("../fonts/jost/Jost-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("JostBlackItalic"), url("../fonts/jost/Jost-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/playfair-display/PlayfairDisplay-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/playfair-display/PlayfairDisplay-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/playfair-display/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/playfair-display/PlayfairDisplay-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/playfair-display/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/playfair-display/PlayfairDisplay-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/playfair-display/PlayfairDisplay-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
